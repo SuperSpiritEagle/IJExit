@@ -7,14 +7,13 @@ namespace IJExit
         static void Main(string[] args)
         {
             int count = 0;
-            string exit;
+            string exitLoop;
             bool isExit = true;
             Console.WriteLine("Для выхода из программы введите exit");
-
             while (isExit)
             {
-                exit = Convert.ToString(Console.ReadLine());
-                if (exit == "exit")
+                exitLoop = Console.ReadLine();
+                if (exitLoop == "exit")
                 {
                     isExit = false;
                 }
