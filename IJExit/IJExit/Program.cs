@@ -6,18 +6,14 @@ namespace IJExit
     {
         static void Main(string[] args)
         {
-            int exitLoop = 0;
-            bool isExit = true;
-
-            while (isExit)
+            string exitLoop = "";
+            int count = 0;
+            Console.WriteLine("Для выхода из цикла введите exit");
+            while (exitLoop != "exit")
             {
-                if (exitLoop == 100)
-                {
-                    isExit = false;
-                }
-                Console.WriteLine(exitLoop++);
+                exitLoop = Console.ReadLine();
+                Console.WriteLine(count++);
             }
-
         }
     }
 }
