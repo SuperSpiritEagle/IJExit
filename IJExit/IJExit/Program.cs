@@ -7,10 +7,10 @@ namespace IJExit
         static void Main(string[] args)
         {
             string userInput = "";
-            string isExit = "exit";
-            Console.WriteLine($"Для выхода из цикла введите {isExit}");
+            string output = "exit";
+            Console.WriteLine($"Для выхода из цикла введите {output}");
 
-            while (userInput!=isExit)
+            while (userInput!=output)
             {
                 userInput = Console.ReadLine();
             }
