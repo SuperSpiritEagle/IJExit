@@ -7,12 +7,12 @@ namespace IJExit
         static void Main(string[] args)
         {
             string exitLoop = "";
-            int count = 0;
+            string isExit = "exit";
             Console.WriteLine("Для выхода из цикла введите exit");
-            while (exitLoop != "exit")
+
+            while (exitLoop != isExit)
             {
                 exitLoop = Console.ReadLine();
-                Console.WriteLine(count++);
             }
         }
     }
