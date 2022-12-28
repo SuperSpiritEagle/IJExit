@@ -6,13 +6,13 @@ namespace IJExit
     {
         static void Main(string[] args)
         {
-            string exitLoop = "";
+            string userInput = "";
             string isExit = "exit";
-            Console.WriteLine("Для выхода из цикла введите exit");
+            Console.WriteLine($"Для выхода из цикла введите {isExit}");
 
-            while (exitLoop != isExit)
+            while (userInput!=isExit)
             {
-                exitLoop = Console.ReadLine();
+                userInput = Console.ReadLine();
             }
         }
     }
